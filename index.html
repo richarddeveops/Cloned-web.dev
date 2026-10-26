@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <section class="NEWSLETTER">
+        <section class="NEWS-BLOG">
             <img src="./asset/blog-header.png" alt="Illustration of a web development article">
             <div>
                 <h2>Keep up on web development news</h2>
@@ -291,51 +291,98 @@
         </section>
 
         <section class="NEWSLETTER">
-            <img src="./asset/blog-header.png" alt="web.dev newsletter illustration">
-            <div>
-                <p class="EYEBROW">Stay up to date</p>
-                <h2>Developer Newsletter</h2>
-                <p>Get the latest news, techniques and updates straight to your inbox.</p>
-                <a class="CARD-button" href="#">Sign up for the newsletter</a>
-            </div>
+            <h1>Developer Newsletter</h1>
+            <p class="NEWSLETTER-intro">Get the latest news, techniques and updates straight to your inbox.</p>
+
+            <form class="NEWSLETTER-form">
+                <div class="NAME-fields">
+                    <label>
+                        <span>First Name</span>
+                        <input type="text" name="first-name" autocomplete="given-name" placeholder="First Name">
+                    </label>
+                    <label>
+                        <span>Last Name</span>
+                        <input type="text" name="last-name" autocomplete="family-name" placeholder="Last Name">
+                    </label>
+                </div>
+
+                <label class="FORM-field">
+                    <span>Your Email</span>
+                    <input type="email" name="email" autocomplete="email" placeholder="Your Email" required>
+                </label>
+
+                <label class="FORM-field" >
+                    <span>Country</span>
+                    <select name="country" autocomplete="country-name" aria-label="Country" style="background-color: #f5f6f7;">
+                        <option value=""></option>
+                        <option value="United States">United States</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </label>
+
+                <p class="NEWSLETTER-note">Don't worry, no spam here! Your information will only be used for web.dev and Chrome related updates and our emails are typically no more than 1-2 times a month. You can unsubscribe anytime.</p>
+
+                <label class="CHECK-option">
+                    <input type="checkbox" name="mailing-list">
+                    <span>Add me to the web.dev mailing list.</span>
+                </label>
+
+                <label class="CHECK-option">
+                    <input type="checkbox" name="terms" required>
+                    <span>I accept Google's <a href="#">Terms and Conditions</a> and acknowledge that my information will be used in accordance with Google's <a href="#">Privacy Policy</a>.</span>
+                </label>
+
+                <div class="CAPTCHA-demo" aria-label="Visual CAPTCHA example; not an actual verification">
+                    <span class="CAPTCHA-checkbox" aria-hidden="true"></span>
+                    <span>I'm not a robot</span>
+                    <span class="CAPTCHA-mark">reCAPTCHA<br><small>Privacy - Terms</small></span>
+                </div>
+
+                <button class="SUBSCRIBE-button" type="submit">SUBSCRIBE</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <div class="FOOTER-top">
-            <a href="#" aria-label="web.dev home">
-                <img src="./asset/imgi_1_lockup.svg" alt="web.dev">
-            </a>
-            <p>We want to help you build beautiful, accessible, fast, and secure websites that work cross-browser, and for all of your users.</p>
-        </div>
-        <div class="FOOTER-links">
+        <div class="FOOTER-main">
+            <div class="FOOTER-brand">
+                <a href="#" aria-label="web.dev home">
+                    <img src="./asset/imgi_1_lockup.svg" alt="web.dev">
+                </a>
+                <p>We want to help you build beautiful, accessible, fast, and secure websites that work cross-browser, and for all of your users. This site is our home for content to help you on that journey, written by members of the Chrome team, and external experts.</p>
+            </div>
+            <div class="FOOTER-links">
             <div>
                 <h2>Contribute</h2>
                 <ul>
-                    <li><a href="#">File an issue</a></li>
-                    <li><a href="#">View source</a></li>
-                    <li><a href="#">Contribute</a></li>
+                    <li><a href="#">File a bug</a></li>
+                    <li><a href="#">See open issues</a></li>
                 </ul>
             </div>
             <div>
-                <h2>Related content</h2>
+                <h2>Related Content</h2>
                 <ul>
                     <li><a href="#">Chrome for Developers</a></li>
-                    <li><a href="#">Developer newsletter</a></li>
-                    <li><a href="#">Web.dev blog</a></li>
+                    <li><a href="#">Chromium updates</a></li>
+                    <li><a href="#">Case studies</a></li>
+                    <li><a href="#">Podcasts &amp; shows</a></li>
                 </ul>
             </div>
             <div>
                 <h2>Follow</h2>
                 <ul>
+                    <li><a href="#">@ChromiumDev on X</a></li>
                     <li><a href="#">YouTube</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">Chrome for Developers on LinkedIn</a></li>
                     <li><a href="#">RSS</a></li>
                 </ul>
             </div>
+            </div>
         </div>
         <div class="FOOTER-bottom">
-            <p>Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License.</p>
             <ul>
                 <li><a href="#">Terms</a></li>
                 <li><a href="#">Privacy</a></li>
